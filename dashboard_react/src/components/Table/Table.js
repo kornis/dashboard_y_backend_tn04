@@ -7,7 +7,7 @@ const mapper = (movie, index) => (
     <Row 
     movie={ movie }
     columns={ columns }
-    key={ movie.titulo + index + "fede" }
+    key={ movie.titulo + index.toString() + "fede" }
     />
 )
 

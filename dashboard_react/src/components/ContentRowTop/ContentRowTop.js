@@ -3,7 +3,8 @@ import ContentRowMovies from "../ContentRowMovies/ContentRowMovies";
 import LastMovieInDB from "./subcomponents/LastMovieInDb";
 import GenresInDB from "./subcomponents/GenresInDb";
 
-function ContentRowTop() {
+function ContentRowTop(props) {
+    const { pelicula } = props;
     return(
     <div className="container-fluid">
     <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -13,7 +14,7 @@ function ContentRowTop() {
     <ContentRowMovies />
 
     <div className="row">
-        <LastMovieInDB />
+        <LastMovieInDB movie={ pelicula } />
 
         <GenresInDB />
     </div>
